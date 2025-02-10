@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Baseutility.BaseLibrary;
@@ -11,9 +12,10 @@ public class WebTableTest extends BaseLibrary {
 	WebTablePage ob;
 	
 	@BeforeTest
-	public void launchurl()
+	@Parameters("browser")
+	public void launchurl(String browser)
 	{
-	   launchUrl();	
+	   launchUrl(browser);	
 	   
 	   ob= new WebTablePage();
 	}

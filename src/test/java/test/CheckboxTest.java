@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Baseutility.BaseLibrary;
@@ -9,10 +10,11 @@ import pages.ChekboxPage;
 public class CheckboxTest extends BaseLibrary
 { 
 	ChekboxPage ob;
+	@Parameters("browser")
 	@BeforeTest
-	public void launcher()
+	public void launcher(String browser)
 	{
-		launchUrl();
+		launchUrl(browser);
 		ob= new ChekboxPage(); 
 	}
 	

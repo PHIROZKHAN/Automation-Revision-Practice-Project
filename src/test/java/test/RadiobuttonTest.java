@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Baseutility.BaseLibrary;
@@ -9,11 +10,11 @@ import pages.RadioButtonsPage;
 public class RadiobuttonTest extends BaseLibrary{
 	
 	RadioButtonsPage ob;
-	
+	@Parameters("browser")
 	@BeforeTest
-	public void launchurl()
+	public void launchurl(String browser)
 	{
-		launchUrl();
+		launchUrl(browser);
 		ob = new RadioButtonsPage();
 		
 	}

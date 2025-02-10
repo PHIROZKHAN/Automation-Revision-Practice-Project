@@ -2,10 +2,6 @@ package pages;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.xml.xpath.XPath;
-import org.openqa.selenium.JavascriptExecutor;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -46,21 +42,21 @@ public class Text_box_page  extends BaseLibrary{
 	
 	public void clickOnClose()
 	{
-		close.click();
+		waitforclick(close);
 	}
 	public void clickOnPractice()
 	{
-		// this java script are used for scroll up page
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", practice);
+// this java script are used for scroll up page
+//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", practice);
 		practice.click();
 	}
 	public void clickOnElement()
 	{
-		element.click();
+		waitforclick(element);
 	}
 	public void clickOnTextBox()
 	{
-		textbox.click();
+		waitforclick(textbox);
 	}
     public void clickOnFillDetails()
 	{

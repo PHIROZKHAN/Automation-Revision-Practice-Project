@@ -7,8 +7,13 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Properties;
+import java.util.Set;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -17,6 +22,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,11 +38,28 @@ public class BaseLibrary implements Applicationutility ,Properties_Utility,Actio
 	
 	public static WebDriver driver;
 	
-	public void launchUrl()
+	public void launchUrl(String browser)
 	{ 
-		// Initialize WebDriver
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(); // Create a new ChromeDriver instance
+		if(browser.equalsIgnoreCase("chrome"))
+		{
+			WebDriverManager.chromedriver().setup();
+	        driver = new ChromeDriver(); // Create a new ChromeDriver instance
+			
+		}
+		else if(browser.equalsIgnoreCase("firefox"))
+		{
+			WebDriverManager.firefoxdriver().setup();
+	        driver = new FirefoxDriver(); // Create a new ChromeDriver instance
+		}
+		else
+		{
+			WebDriverManager.edgedriver().setup();
+	        driver = new EdgeDriver(); // Create a new ChromeDriver instance	
+		}
+		
+		
+		
+        
 
         // Launch URL
         driver.get("https://testingbaba.com/old/");
@@ -161,16 +184,46 @@ public class BaseLibrary implements Applicationutility ,Properties_Utility,Actio
 			rb.keyRelease(KeyEvent.VK_CONTROL);
 			rb.keyPress(KeyEvent.VK_ENTER);
 			rb.keyRelease(KeyEvent.VK_ENTER);
+			
 		}
 		catch(Exception e)
 		{
 			System.out.println("issue in file uploading");
+		}	
+	}
+	@Override
+	 public int getResponseCode(String url ) 
+	{
+		int getresponse=0;;
+		
+		try {
+			URL curl = new URL (url);
+			
+			HttpURLConnection huc;	huc = (HttpURLConnection)curl.openConnection();
+			//HttpURLConnection huc = (HttpURLConnection)();
+
+			huc.setRequestMethod("GET");
+			huc.connect();
+			 getresponse=huc.getResponseCode();
+			
+		} 
+		
+		catch (IOException e) {
+			
+			System.out.println(" issue in get response ");
 		}
 		
-		
-		
-	}	
+		return getresponse;
 	}
+	@Override
+	public void windowHandle(int tab) {
+		// TODO Auto-generated method stub
+	Set<String>	handles=driver.getWindowHandles();
+	ArrayList<String> handle= new ArrayList<String>(handles);
+	driver.switchTo().window(handle.get(tab));
+	}
+   }
+	
 	
 	 
 	 

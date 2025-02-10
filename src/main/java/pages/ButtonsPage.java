@@ -31,22 +31,24 @@ public class ButtonsPage extends BaseLibrary {
 	
 	public void clickOnClose()
 	{
-		click(close);
+		waitforclick(close);
 	}
 	public void clickOnPractice()
 	{
-		click(practice);
+		waitforclick(practice);
 	}
 	public void clickOnElement()
 	{
-		click(element);
+
+		waitforclick(element);
 	}
 	public void clickOnButtons()
 	{
-	   click(buttons);	
+	   waitforclick(buttons);
 	}
 	public void clickOnDoubleclick()
 	{
+
 		doubleclick(doubleclick);
 	}
 	public void clickOnRightClick()
@@ -55,6 +57,6 @@ public class ButtonsPage extends BaseLibrary {
 	}
 	public void clickOnSingleClick()
 	{
-		click(click);
+		waitforclick(click);
 	}
 }
