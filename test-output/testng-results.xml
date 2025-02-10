@@ -2,36 +2,43 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-30T17:26:07 IST" name="Default suite" finished-at="2025-01-30T17:26:18 IST" duration-ms="11321">
+  <suite started-at="2025-02-10T00:07:34 IST" name="Suite" finished-at="2025-02-10T00:08:45 IST" duration-ms="70892">
     <groups>
     </groups>
-    <test started-at="2025-01-30T17:26:07 IST" name="Default test" finished-at="2025-01-30T17:26:18 IST" duration-ms="11321">
-      <class name="test.UploadDownloadTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:test.UploadDownloadTest@9597028]" started-at="2025-01-30T17:26:07 IST" name="launcher" finished-at="2025-01-30T17:26:15 IST" duration-ms="7629" status="PASS">
+    <test started-at="2025-02-10T00:07:34 IST" name="BrokenLinks_Test" finished-at="2025-02-10T00:08:45 IST" duration-ms="70892">
+      <class name="test.BrokenLinks_Test">
+        <test-method is-config="true" signature="launcher(java.lang.String)[pri:0, instance:test.BrokenLinks_Test@5b8dfcc1]" started-at="2025-02-10T00:07:34 IST" name="launcher" finished-at="2025-02-10T00:07:54 IST" duration-ms="20371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcher -->
-        <test-method signature="clickAtClose()[pri:1, instance:test.UploadDownloadTest@9597028]" started-at="2025-01-30T17:26:15 IST" name="clickAtClose" finished-at="2025-01-30T17:26:15 IST" duration-ms="349" status="PASS">
+        <test-method signature="clickAtclose()[pri:1, instance:test.BrokenLinks_Test@5b8dfcc1]" started-at="2025-02-10T00:07:54 IST" name="clickAtclose" finished-at="2025-02-10T00:07:55 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickAtClose -->
-        <test-method signature="clickAtPractice()[pri:2, instance:test.UploadDownloadTest@9597028]" started-at="2025-01-30T17:26:15 IST" name="clickAtPractice" finished-at="2025-01-30T17:26:17 IST" duration-ms="2095" status="PASS">
+        </test-method> <!-- clickAtclose -->
+        <test-method signature="clickAtPractice()[pri:2, instance:test.BrokenLinks_Test@5b8dfcc1]" started-at="2025-02-10T00:07:55 IST" name="clickAtPractice" finished-at="2025-02-10T00:07:57 IST" duration-ms="2143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAtPractice -->
-        <test-method signature="clickAtElement()[pri:3, instance:test.UploadDownloadTest@9597028]" started-at="2025-01-30T17:26:17 IST" name="clickAtElement" finished-at="2025-01-30T17:26:17 IST" duration-ms="168" status="PASS">
+        <test-method signature="clickAtElement()[pri:3, instance:test.BrokenLinks_Test@5b8dfcc1]" started-at="2025-02-10T00:07:57 IST" name="clickAtElement" finished-at="2025-02-10T00:07:57 IST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAtElement -->
-        <test-method signature="clickAtUploadDownload()[pri:4, instance:test.UploadDownloadTest@9597028]" started-at="2025-01-30T17:26:17 IST" name="clickAtUploadDownload" finished-at="2025-01-30T17:26:18 IST" duration-ms="762" status="PASS">
+        <test-method signature="clickAtLinks()[pri:4, instance:test.BrokenLinks_Test@5b8dfcc1]" started-at="2025-02-10T00:07:57 IST" name="clickAtLinks" finished-at="2025-02-10T00:07:58 IST" duration-ms="758" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickAtUploadDownload -->
-        <test-method signature="clickAtUpload()[pri:5, instance:test.UploadDownloadTest@9597028]" started-at="2025-01-30T17:26:18 IST" name="clickAtUpload" finished-at="2025-01-30T17:26:18 IST" duration-ms="230" status="PASS">
+        </test-method> <!-- clickAtLinks -->
+        <test-method signature="clickAtVerify()[pri:5, instance:test.BrokenLinks_Test@5b8dfcc1]" started-at="2025-02-10T00:07:58 IST" name="clickAtVerify" finished-at="2025-02-10T00:08:45 IST" duration-ms="46926" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickAtUpload -->
-      </class> <!-- test.UploadDownloadTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- clickAtVerify -->
+      </class> <!-- test.BrokenLinks_Test -->
+    </test> <!-- BrokenLinks_Test -->
+  </suite> <!-- Suite -->
 </testng-results>

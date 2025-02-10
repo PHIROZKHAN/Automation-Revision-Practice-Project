@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Baseutility.BaseLibrary;
@@ -10,11 +11,11 @@ public class TextboxTest extends BaseLibrary {
 	
 	
 	Text_box_page ob;
-	
+	@Parameters("browser")
 	@BeforeTest
-	public void launcher()
+	public void launcher(String browser)
 	{
-		launchUrl();
+		launchUrl(browser);
 		
 		ob= new Text_box_page();
 		

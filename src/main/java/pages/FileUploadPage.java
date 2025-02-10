@@ -46,8 +46,11 @@ public class FileUploadPage extends BaseLibrary{
 	}
 	public void clickOnUpload()
 	{
-		uploadFile(null);
-		//waitforsendkey(upload, "C:\\Users\\PHIROZ KHAN\\OneDrive\\Desktop");
+		singleClick(upload);
+		//waitforclick(upload);
+		uploadFile("C:\\Users\\PHIROZ KHAN\\OneDrive\\Desktop\\git-cheat-sheet.pdf");
+		
+		
 	}
 	
 	

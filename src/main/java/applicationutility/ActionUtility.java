@@ -13,4 +13,6 @@ public interface ActionUtility {
 	public void waitforclick(WebElement ele);
     public void waitforsendkey(WebElement ele,String str);
     public void uploadFile(String Filepath);
+    public int getResponseCode(String url);
+    public void windowHandle(int tab);
 }

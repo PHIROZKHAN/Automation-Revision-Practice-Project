@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.UploadDownloadTest">
+      <class name="test.BrokenLinks_Test">
         <methods>
-          <include name="clickAtClose"/>
-          <include name="clickAtElement"/>
-          <include name="clickAtUploadDownload"/>
-          <include name="clickAtUpload"/>
           <include name="launcher"/>
-          <include name="clickAtPractice"/>
+          <include name="clickAtVerify"/>
         </methods>
-      </class> <!-- test.UploadDownloadTest -->
+      </class> <!-- test.BrokenLinks_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

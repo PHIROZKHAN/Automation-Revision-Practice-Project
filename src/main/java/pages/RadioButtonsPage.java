@@ -39,7 +39,7 @@ public class RadioButtonsPage extends BaseLibrary {
 	
 	public void clickOnClose()
 	{
-		close.click();
+		waitforclick(close);
 	}
 	public void clickOnPractice()
 	{
@@ -54,7 +54,7 @@ public class RadioButtonsPage extends BaseLibrary {
 	}
 	public void clickOnRadioButton()
 	{
-		radiobuttons.click();
+		waitforclick(radiobuttons);
 	}
 	public void clickOnYesButton()
 	{

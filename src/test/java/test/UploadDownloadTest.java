@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Baseutility.BaseLibrary;
@@ -9,11 +10,11 @@ import pages.FileUploadPage;
 public class UploadDownloadTest extends BaseLibrary {
 	
 	FileUploadPage ob;
-	
+	@Parameters("browser")
 	@BeforeTest
-	public void launcher()
+	public void launcher(String browser)
 	{
-		launchUrl();
+		launchUrl(browser);
 		
 		ob= new FileUploadPage();
 	}
@@ -41,6 +42,8 @@ public class UploadDownloadTest extends BaseLibrary {
 	@Test(priority=5,enabled=true)
 	public void clickAtUpload()
 	{
+		
+		
 		ob.clickOnUpload();
 	}
 	

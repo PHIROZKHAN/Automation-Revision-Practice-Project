@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Baseutility.BaseLibrary;
@@ -11,9 +12,10 @@ public class ButtonTest extends BaseLibrary {
 	ButtonsPage ob;
 	
 	@BeforeTest
-	public void launcher()
+	@Parameters("browser")
+	public void launcher(String browser)
 	{
-		launchUrl();
+		launchUrl(browser);
 		ob= new ButtonsPage();
 	}
 	
