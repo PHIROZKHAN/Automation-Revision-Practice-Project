@@ -58,7 +58,7 @@ public class BrokenLinks_Page extends BaseLibrary {
 		waitforclick(practice);
 	}
 
-	// phiroz
+	// phiroz kaam
 	public void clickOnElement()
 	{
 		waitforclick(element);
