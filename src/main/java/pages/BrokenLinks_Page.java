@@ -1,5 +1,4 @@
 package pages;
-
 import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -58,6 +57,8 @@ public class BrokenLinks_Page extends BaseLibrary {
 	{
 		waitforclick(practice);
 	}
+
+	// phiroz
 	public void clickOnElement()
 	{
 		waitforclick(element);
