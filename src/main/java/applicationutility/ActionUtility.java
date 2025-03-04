@@ -16,4 +16,5 @@ public interface ActionUtility {
     public int getResponseCode(String url);
     public void windowHandle(int tab);
     public void scrollAtElemenet(WebElement ele);
+    public void dragAndDropAt(WebElement ele,int x ,int y);
 }

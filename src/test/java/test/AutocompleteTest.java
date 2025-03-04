@@ -3,19 +3,18 @@ package test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import Baseutility.BaseLibrary;
-import pages.Accordian_Page;
+import pages.AutocompletePage;
 
-public class Accordian_Test extends BaseLibrary {
+public class AutocompleteTest extends BaseLibrary {
 	
-	Accordian_Page ob;
+	AutocompletePage ob;
 	@Parameters("browser")
 	@BeforeTest
 	public void launchre(String br)
 	{
 		launchUrl(br);
-		ob=new Accordian_Page();
+		ob=new AutocompletePage();
 		
 	}
 	@Test(priority=1,enabled=true,groups= {"smoke"})
@@ -34,36 +33,13 @@ public class Accordian_Test extends BaseLibrary {
 		ob.clickOnWidget();
 	}
 	@Test(priority=4,enabled=true,groups= {"smoke"})
-	public void clickAtAccordian()
+	public void clickAtAutocomplete()
 	{
-		ob.clickOnAccordian();
+		ob.clickOnAutocomplete();
 	}
-	@Test(priority=6,enabled=true,groups= {"smoke"})
-	public void clickAtParagraph1() throws InterruptedException
-	{
-		ob.clickOnParagraph1();
-	}
-	
 	@Test(priority=5,enabled=true,groups= {"smoke"})
-	public void clickAtPragraph2() 
+	public void clickAtTextBar()
 	{
-		ob.clickOnParagraph2();
+		ob.clickOnTextbar();
 	}
-	@Test(priority=7,enabled=false,groups= {"smoke"})
-	public void clickAtPragraph3()
-	{
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

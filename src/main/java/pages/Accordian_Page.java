@@ -61,17 +61,19 @@ public class Accordian_Page extends BaseLibrary {
 	{
 		waitforclick(accordian);
 	}
+	
 	public void clickOnParagraph1() throws InterruptedException
 	{
 		Thread.sleep(3000);
 		SoftAssert softassert= new SoftAssert();
-		doubleclick(paragraph1);
+		waitforclick(paragraph1);
 		String Actualtext=para1text.getText();
 		String Expected="Accordions are useful when you";
 		softassert.assertEquals(true, Actualtext.contains(Expected));
 		
 		//softassert.assertAll();
 	}
+	
 	public void clickOnParagraph2() 
 	{
 		waitforclick(paragraph2);
@@ -79,8 +81,9 @@ public class Accordian_Page extends BaseLibrary {
 		String Actual=para2text.getText();
 		//String Expected=getPropertiesData("paragraph2text");
 		String Expected="Food truck quinoa nesciunt laborum eiusmod.";
-				
+			
 		softassert.assertEquals(true, Actual.contains(Expected));
 	}
+	
 	
 }

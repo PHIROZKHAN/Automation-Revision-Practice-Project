@@ -149,6 +149,13 @@ public class BaseLibrary implements Applicationutility ,Properties_Utility,Actio
 		act.dragAndDrop(ele, ele);
 	}
 	@Override
+	public void dragAndDropAt(WebElement ele, int x, int y) {
+
+    Actions act = new Actions (driver);
+    act.dragAndDropBy(ele, x, y);
+		
+	}
+	@Override
 	public void mouseOver(WebElement ele) {
 		Actions act = new Actions(driver);
 		act.moveToElement(ele);
@@ -237,6 +244,7 @@ public class BaseLibrary implements Applicationutility ,Properties_Utility,Actio
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeAsyncScript("argument[0].scrollIntoView(true);", ele);
 	}
+	
    }
 	
 	
