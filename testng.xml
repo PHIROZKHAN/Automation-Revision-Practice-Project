@@ -88,9 +88,33 @@
 	 </classes>
  </test>
  
- <test name="Accordian_Test" enabled="true">
+ <test name="Accordian_Test" enabled="false">
 	 <classes>
 		 <class name="test.Accordian_Test"></class>
+	 </classes>
+ </test>
+ 
+ <test name="AutocompleteTest" enabled="false">
+	 <classes>
+		 <class name="test.AutocompleteTest"></class>
+	 </classes>
+ </test>
+ 
+ <test name="DatePickerTest" enabled="false">
+	 <classes>
+		 <class name="test.DatePickerTest"></class>
+	 </classes>
+ </test>
+ 
+ <test name="SliderTest" enabled="false">
+	 <classes>
+		 <class name="test.SliderTest"></class>
+	 </classes>
+ </test>
+ 
+ <test name="ProgressBarTest" enabled="false">
+	 <classes>
+		 <class name="test.ProgressBarTest"></class>
 	 </classes>
  </test>
  

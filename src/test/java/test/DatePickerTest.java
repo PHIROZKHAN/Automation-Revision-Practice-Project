@@ -6,16 +6,17 @@ import org.testng.annotations.Test;
 
 import Baseutility.BaseLibrary;
 import pages.Accordian_Page;
+import pages.DatePickerPage;
 
-public class Accordian_Test extends BaseLibrary {
+public class DatePickerTest extends BaseLibrary {
 	
-	Accordian_Page ob;
+	DatePickerPage ob;
 	@Parameters("browser")
 	@BeforeTest
 	public void launchre(String br)
 	{
 		launchUrl(br);
-		ob=new Accordian_Page();
+		ob=new DatePickerPage();
 		
 	}
 	@Test(priority=1,enabled=true,groups= {"smoke"})
@@ -34,36 +35,20 @@ public class Accordian_Test extends BaseLibrary {
 		ob.clickOnWidget();
 	}
 	@Test(priority=4,enabled=true,groups= {"smoke"})
-	public void clickAtAccordian()
+	public void clickAtDatePicker()
 	{
-		ob.clickOnAccordian();
+		ob.clickOnDatePicker();
 	}
-	@Test(priority=6,enabled=true,groups= {"smoke"})
-	public void clickAtParagraph1() throws InterruptedException
-	{
-		ob.clickOnParagraph1();
-	}
-	
 	@Test(priority=5,enabled=true,groups= {"smoke"})
-	public void clickAtPragraph2() 
+	public void clickAtDate()
 	{
-		ob.clickOnParagraph2();
-	}
-	@Test(priority=7,enabled=false,groups= {"smoke"})
-	public void clickAtPragraph3()
-	{
-		
+		ob.clickOnDate();
 	}
 	
+	@Test(priority=6,enabled=true,groups= {"smoke"})
+	public void clickAtDatetime() 
+	{
+		ob.clickOnDatetime();
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
