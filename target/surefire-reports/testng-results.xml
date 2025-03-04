@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-12T23:43:14 IST" name="Suite" finished-at="2025-02-12T23:45:06 IST" duration-ms="111410">
+    <groups>
+    </groups>
+    <test started-at="2025-02-12T23:43:14 IST" name="WebTableTest" finished-at="2025-02-12T23:43:35 IST" duration-ms="20979">
+      <class name="test.WebTableTest">
+        <test-method is-config="true" signature="launchurl(java.lang.String)[pri:0, instance:test.WebTableTest@145f66e3]" started-at="2025-02-12T23:43:14 IST" name="launchurl" finished-at="2025-02-12T23:43:22 IST" duration-ms="8033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchurl -->
+        <test-method signature="clickAtClose()[pri:1, instance:test.WebTableTest@145f66e3]" started-at="2025-02-12T23:43:23 IST" name="clickAtClose" finished-at="2025-02-12T23:43:23 IST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtClose -->
+        <test-method signature="clickAtPractice()[pri:2, instance:test.WebTableTest@145f66e3]" started-at="2025-02-12T23:43:23 IST" name="clickAtPractice" finished-at="2025-02-12T23:43:28 IST" duration-ms="5256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtPractice -->
+        <test-method signature="clickAtElement()[pri:3, instance:test.WebTableTest@145f66e3]" started-at="2025-02-12T23:43:28 IST" name="clickAtElement" finished-at="2025-02-12T23:43:28 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtElement -->
+        <test-method signature="clickAtWebtable()[pri:4, instance:test.WebTableTest@145f66e3]" started-at="2025-02-12T23:43:28 IST" name="clickAtWebtable" finished-at="2025-02-12T23:43:29 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtWebtable -->
+        <test-method signature="clickAtNameEmail()[pri:5, instance:test.WebTableTest@145f66e3]" started-at="2025-02-12T23:43:29 IST" name="clickAtNameEmail" finished-at="2025-02-12T23:43:35 IST" duration-ms="6666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtNameEmail -->
+      </class> <!-- test.WebTableTest -->
+    </test> <!-- WebTableTest -->
+    <test started-at="2025-02-12T23:43:35 IST" name="ButtonTest" finished-at="2025-02-12T23:43:58 IST" duration-ms="22271">
+      <class name="test.ButtonTest">
+        <test-method is-config="true" signature="launcher(java.lang.String)[pri:0, instance:test.ButtonTest@38425407]" started-at="2025-02-12T23:43:35 IST" name="launcher" finished-at="2025-02-12T23:43:41 IST" duration-ms="5712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="clickAtClose()[pri:1, instance:test.ButtonTest@38425407]" started-at="2025-02-12T23:43:41 IST" name="clickAtClose" finished-at="2025-02-12T23:43:47 IST" duration-ms="6125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtClose -->
+        <test-method signature="clickAtPractice()[pri:2, instance:test.ButtonTest@38425407]" started-at="2025-02-12T23:43:47 IST" name="clickAtPractice" finished-at="2025-02-12T23:43:50 IST" duration-ms="3208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtPractice -->
+        <test-method signature="clickAtElement()[pri:3, instance:test.ButtonTest@38425407]" started-at="2025-02-12T23:43:50 IST" name="clickAtElement" finished-at="2025-02-12T23:43:51 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtElement -->
+        <test-method signature="clickAtButtons()[pri:4, instance:test.ButtonTest@38425407]" started-at="2025-02-12T23:43:51 IST" name="clickAtButtons" finished-at="2025-02-12T23:43:52 IST" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtButtons -->
+        <test-method signature="clickAtDoubleclick()[pri:5, instance:test.ButtonTest@38425407]" started-at="2025-02-12T23:43:52 IST" name="clickAtDoubleclick" finished-at="2025-02-12T23:43:57 IST" duration-ms="5127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtDoubleclick -->
+        <test-method signature="clickAtRight()[pri:6, instance:test.ButtonTest@38425407]" started-at="2025-02-12T23:43:57 IST" name="clickAtRight" finished-at="2025-02-12T23:43:57 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtRight -->
+        <test-method signature="clickAtSnigleclick()[pri:7, instance:test.ButtonTest@38425407]" started-at="2025-02-12T23:43:57 IST" name="clickAtSnigleclick" finished-at="2025-02-12T23:43:58 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtSnigleclick -->
+      </class> <!-- test.ButtonTest -->
+    </test> <!-- ButtonTest -->
+    <test started-at="2025-02-12T23:43:58 IST" name="RadiobuttonTest" finished-at="2025-02-12T23:44:30 IST" duration-ms="32640">
+      <class name="test.RadiobuttonTest">
+        <test-method is-config="true" signature="launchurl(java.lang.String)[pri:0, instance:test.RadiobuttonTest@4c402120]" started-at="2025-02-12T23:43:58 IST" name="launchurl" finished-at="2025-02-12T23:44:13 IST" duration-ms="15175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchurl -->
+        <test-method signature="clickAtClose()[pri:1, instance:test.RadiobuttonTest@4c402120]" started-at="2025-02-12T23:44:13 IST" name="clickAtClose" finished-at="2025-02-12T23:44:14 IST" duration-ms="1460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtClose -->
+        <test-method signature="clcikAtPractice()[pri:2, instance:test.RadiobuttonTest@4c402120]" started-at="2025-02-12T23:44:14 IST" name="clcikAtPractice" finished-at="2025-02-12T23:44:23 IST" duration-ms="8924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clcikAtPractice -->
+        <test-method signature="clickAtElement()[pri:3, instance:test.RadiobuttonTest@4c402120]" started-at="2025-02-12T23:44:24 IST" name="clickAtElement" finished-at="2025-02-12T23:44:25 IST" duration-ms="1113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtElement -->
+        <test-method signature="clickAtRadiobutton()[pri:4, instance:test.RadiobuttonTest@4c402120]" started-at="2025-02-12T23:44:25 IST" name="clickAtRadiobutton" finished-at="2025-02-12T23:44:29 IST" duration-ms="3610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtRadiobutton -->
+        <test-method signature="clickAtYesbutton()[pri:5, instance:test.RadiobuttonTest@4c402120]" started-at="2025-02-12T23:44:29 IST" name="clickAtYesbutton" finished-at="2025-02-12T23:44:29 IST" duration-ms="513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtYesbutton -->
+        <test-method signature="clickAtImpressive()[pri:6, instance:test.RadiobuttonTest@4c402120]" started-at="2025-02-12T23:44:29 IST" name="clickAtImpressive" finished-at="2025-02-12T23:44:30 IST" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtImpressive -->
+        <test-method signature="clickAtNobutton()[pri:7, instance:test.RadiobuttonTest@4c402120]" started-at="2025-02-12T23:44:30 IST" name="clickAtNobutton" finished-at="2025-02-12T23:44:30 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtNobutton -->
+      </class> <!-- test.RadiobuttonTest -->
+    </test> <!-- RadiobuttonTest -->
+    <test started-at="2025-02-12T23:44:32 IST" name="BrokenImage_Test" finished-at="2025-02-12T23:45:06 IST" duration-ms="34029">
+      <class name="test.BrokenImage_Test">
+        <test-method is-config="true" signature="launcher(java.lang.String)[pri:0, instance:test.BrokenImage_Test@815b41f]" started-at="2025-02-12T23:44:32 IST" name="launcher" finished-at="2025-02-12T23:44:51 IST" duration-ms="19399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="clickAtclose()[pri:1, instance:test.BrokenImage_Test@815b41f]" started-at="2025-02-12T23:44:51 IST" name="clickAtclose" finished-at="2025-02-12T23:44:55 IST" duration-ms="4263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtclose -->
+        <test-method signature="clickAtPractice()[pri:2, instance:test.BrokenImage_Test@815b41f]" started-at="2025-02-12T23:44:56 IST" name="clickAtPractice" finished-at="2025-02-12T23:44:59 IST" duration-ms="3058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtPractice -->
+        <test-method signature="clickAtElement()[pri:3, instance:test.BrokenImage_Test@815b41f]" started-at="2025-02-12T23:44:59 IST" name="clickAtElement" finished-at="2025-02-12T23:44:59 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtElement -->
+        <test-method signature="clickAtBrokenImage()[pri:4, instance:test.BrokenImage_Test@815b41f]" started-at="2025-02-12T23:44:59 IST" name="clickAtBrokenImage" finished-at="2025-02-12T23:45:00 IST" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtBrokenImage -->
+        <test-method signature="clickAtVerify()[pri:5, instance:test.BrokenImage_Test@815b41f]" started-at="2025-02-12T23:45:00 IST" name="clickAtVerify" finished-at="2025-02-12T23:45:06 IST" duration-ms="5403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAtVerify -->
+      </class> <!-- test.BrokenImage_Test -->
+    </test> <!-- BrokenImage_Test -->
+  </suite> <!-- Suite -->
+</testng-results>

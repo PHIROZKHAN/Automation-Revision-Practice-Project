@@ -2,14 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="UploadDownloadTest(failed)">
+  <test thread-count="5" name="Accordian_Test(failed)">
     <classes>
-      <class name="test.UploadDownloadTest">
+      <class name="test.Accordian_Test">
         <methods>
-          <include name="clickAtUpload"/>
-          <include name="launcher"/>
+          <include name="clickAtPractice"/>
+          <include name="launchre"/>
+          <include name="clickAtPragraph2"/>
+          <include name="clickAtAccordian"/>
+          <include name="clickAtClose"/>
+          <include name="clickAtParagraph1"/>
+          <include name="clickAtWidget"/>
         </methods>
-      </class> <!-- test.UploadDownloadTest -->
+      </class> <!-- test.Accordian_Test -->
     </classes>
-  </test> <!-- UploadDownloadTest(failed) -->
+  </test> <!-- Accordian_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
