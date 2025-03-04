@@ -15,4 +15,5 @@ public interface ActionUtility {
     public void uploadFile(String Filepath);
     public int getResponseCode(String url);
     public void windowHandle(int tab);
+    public void scrollAtElemenet(WebElement ele);
 }

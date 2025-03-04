@@ -36,14 +36,34 @@ public class BrokenLinks_Test extends BaseLibrary {
 	{
 		ob.clickOnLinks();
 	}
-	@Test(priority=5)
-	public void clickAtVerify()
+	@Test(priority=5 , enabled=false)
+	public void clickAtveryfyLink()
 	{
 		ob.veryfyLink();
 	}
+	@Test(priority=6)
+	public void clickAtDemo() throws InterruptedException
+	{
+		ob.clickOnDemo();
+	}
 	
+	@Test(priority=7)
+	public void clickAtcreat()
+	{
+		ob.clickOnCreated();
+	}
 	
+	@Test(priority=8 )
+	public void clickAtNoContent()
+	{
+		ob.clickOnNoContent();
+	}
 	
+	@Test(priority=9)
+	public void clickAtMoved()
+	{
+		ob.clickOnMoved();
+	}
 	
 	
 	

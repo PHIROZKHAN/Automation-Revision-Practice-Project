@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="BrokenLinks_Test(failed)(failed)">
+    <classes>
+      <class name="test.BrokenLinks_Test">
+        <methods>
+          <include name="launcher"/>
+          <include name="clickAtMoved"/>
+        </methods>
+      </class> <!-- test.BrokenLinks_Test -->
+    </classes>
+  </test> <!-- BrokenLinks_Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

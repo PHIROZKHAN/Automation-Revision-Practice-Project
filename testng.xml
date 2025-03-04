@@ -52,11 +52,49 @@
 	  </classes>
   </test>
   
-  <test name="BrokenLinks_Test" enabled="true">
+  <test name="BrokenLinks_Test" enabled="false">
 	  <classes>
 		  <class name="test.BrokenLinks_Test"></class>
 	  </classes>
   </test>
+  
+  <test name="Browser_Windows_Test" enabled="false">
+	  <classes>
+		  <class name="test.Browser_Windows_Test"></class>
+	  </classes>
+  </test>
+  
+  <test name="Alerts_Test" enabled="false">
+	  <classes>
+		  <class name="test.Alerts_Test"></class>
+	  </classes>
+  </test>
+  
+ <test name="Frames_Test" enabled="false">
+	 <classes>
+		 <class name="test.Frames_Test"></class>
+	 </classes>
+ </test>
+ 
+ <test name="Nested_Frames_Test" enabled="false">
+	 <classes>
+		 <class name="test.Nested_Frames_Test"></class>
+	 </classes>
+ </test>
+ 
+ <test name="Moadal_Dialogs_Test" enabled="false">
+	 <classes>
+		 <class name="test.Moadal_Dialogs_Test"></class>
+	 </classes>
+ </test>
+ 
+ <test name="Accordian_Test" enabled="true">
+	 <classes>
+		 <class name="test.Accordian_Test"></class>
+	 </classes>
+ </test>
+ 
+  
 </suite> <!-- Suite -->
 
       

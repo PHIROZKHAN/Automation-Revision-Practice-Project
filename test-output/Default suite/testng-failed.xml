@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.BrokenLinks_Test">
+      <class name="test.Browser_Windows_Test">
         <methods>
-          <include name="launcher"/>
-          <include name="clickAtVerify"/>
+          <include name="clickAtNewWindowMassage"/>
+          <include name="clickAtNewWindow"/>
+          <include name="launchre"/>
         </methods>
-      </class> <!-- test.BrokenLinks_Test -->
+      </class> <!-- test.Browser_Windows_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

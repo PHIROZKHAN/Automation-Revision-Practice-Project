@@ -17,6 +17,7 @@ import java.util.Set;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,7 +34,7 @@ import applicationutility.Properties_Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseLibrary implements Applicationutility ,Properties_Utility,ActionUtility
-
+ 
    {
 	
 	public static WebDriver driver;
@@ -42,17 +43,22 @@ public class BaseLibrary implements Applicationutility ,Properties_Utility,Actio
 	{ 
 		if(browser.equalsIgnoreCase("chrome"))
 		{
+			//WebDriverManager.chromedriver().clearResolutionCache();
+			
+
 			WebDriverManager.chromedriver().setup();
 	        driver = new ChromeDriver(); // Create a new ChromeDriver instance
 			
 		}
 		else if(browser.equalsIgnoreCase("firefox"))
 		{
+			WebDriverManager.chromedriver().clearResolutionCache();
 			WebDriverManager.firefoxdriver().setup();
 	        driver = new FirefoxDriver(); // Create a new ChromeDriver instance
 		}
 		else
 		{
+			WebDriverManager.chromedriver().clearResolutionCache();
 			WebDriverManager.edgedriver().setup();
 	        driver = new EdgeDriver(); // Create a new ChromeDriver instance	
 		}
@@ -100,15 +106,19 @@ public class BaseLibrary implements Applicationutility ,Properties_Utility,Actio
 	@Override
 	public String getPropertiesData(String key) {
 		String value="";
-		String path="C:\\Users\\PHIROZ KHAN\\Practice_Automation_Maven_project_Jan-2025\\testdata\\config.properties";
+		String path = System.getProperty("user.dir") + "\\testdata\\config.properties";
 		try {
 			FileInputStream fis= new FileInputStream(path);
 			Properties prop= new Properties();
 			prop.load(fis);
 			value=prop.getProperty(key);
+			 if (value == null) {
+		            System.out.println("Key '" + key + "' not found in properties file.");
+		        }
 		    } 
 		catch (Exception e) {
 			System.out.println("issue get read data from propertiese file");
+			e.printStackTrace();
 		    }
 		return value;
 	}
@@ -221,6 +231,11 @@ public class BaseLibrary implements Applicationutility ,Properties_Utility,Actio
 	Set<String>	handles=driver.getWindowHandles();
 	ArrayList<String> handle= new ArrayList<String>(handles);
 	driver.switchTo().window(handle.get(tab));
+	}
+	@Override
+	public void scrollAtElemenet(WebElement ele) {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeAsyncScript("argument[0].scrollIntoView(true);", ele);
 	}
    }
 	
