@@ -118,6 +118,18 @@
 	 </classes>
  </test>
  
+ <test name="TabsTest" enabled="false">
+	 <classes>
+		 <class name="test.TabsTest"></class>
+	 </classes>
+ </test>
+ 
+ <test name="ToolTipsTest" enabled="true">
+	 <classes>
+		 <class name="test.ToolTipsTest"></class>
+	 </classes>
+ </test>
+ 
   
 </suite> <!-- Suite -->
 
