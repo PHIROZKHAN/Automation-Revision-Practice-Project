@@ -14,6 +14,7 @@ public class Accordian_Page extends BaseLibrary {
 		PageFactory.initElements(driver, this);
 		
 	}
+	//team member
 	@FindBy(xpath = "//button[text()='×']")
 	private WebElement close;
 	
