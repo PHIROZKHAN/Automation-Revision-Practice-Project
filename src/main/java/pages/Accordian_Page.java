@@ -18,6 +18,7 @@ public class Accordian_Page extends BaseLibrary {
 	// tumhra next day ka kam
 	//2rd day work done by team
 	// 3 day phiroz work
+//3rd dayy team work
 	@FindBy(xpath = "//button[text()='×']")
 	private WebElement close;
 	
