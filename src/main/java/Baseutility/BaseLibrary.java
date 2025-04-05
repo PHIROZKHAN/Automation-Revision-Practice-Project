@@ -146,19 +146,19 @@ public class BaseLibrary implements Applicationutility ,Properties_Utility,Actio
 	@Override
 	public void dragAndDrop(WebElement ele) {
 		Actions act =new Actions(driver);
-		act.dragAndDrop(ele, ele);
+		act.dragAndDrop(ele, ele).perform();
 	}
 	@Override
 	public void dragAndDropAt(WebElement ele, int x, int y) {
 
     Actions act = new Actions (driver);
-    act.dragAndDropBy(ele, x, y);
+    act.dragAndDropBy(ele, x, y).perform();
 		
 	}
 	@Override
 	public void mouseOver(WebElement ele) {
 		Actions act = new Actions(driver);
-		act.moveToElement(ele);
+		act.moveToElement(ele).perform();
 		
 	}
 	@Override

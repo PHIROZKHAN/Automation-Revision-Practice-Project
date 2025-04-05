@@ -124,11 +124,30 @@
 	 </classes>
  </test>
  
- <test name="ToolTipsTest" enabled="true">
+ <test name="ToolTipsTest" enabled="false">
 	 <classes>
 		 <class name="test.ToolTipsTest"></class>
 	 </classes>
  </test>
+ 
+ <test name="MenuTest" enabled="false">
+	 <classes>
+		 <class name="test.MenuTest"></class>
+	 </classes>
+ </test>
+ 
+ <test name="SelectMenuTest" enabled="false">
+	 <classes>
+		 <class name="test.SelectMenuTest"></class>
+	 </classes>
+	 </test>
+	 
+	 <test name="Interactions_Test" enabled="true">
+		 
+		 <classes>
+			 <class name="test.Interactions_Test"></class>
+		 </classes>
+	 </test>
  
   
 </suite> <!-- Suite -->
